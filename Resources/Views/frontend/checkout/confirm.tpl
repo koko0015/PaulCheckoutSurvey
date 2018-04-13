@@ -1,21 +1,23 @@
 {extends file="parent:frontend/checkout/confirm.tpl"}
 
-{block name="frontend_checkout_confirm_additional_features_add_product"}
+{block name="frontend_checkout_confirm_information_wrapper"}
     {$smarty.block.parent}
-
-    {* Additional Order Survey *}
-    {block name='frontend_checkout_confirm_comment_survey'}
-        <div>
-            <h4>{s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden?{/s}</h4>
-            <select>
-                <option value="">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
-                <option value="amazon">Amazon</option>
-                <option value="ebay">eBay</option>
-                <option value="googleSearch">Google Suche</option>
-                <option value="googleShopping">Google Shopping</option>
-                <option value="recommendation ">Empfehlung</option>
-                <option value="other">Andere Suchmaschiene</option>
-            </select>
+    <div class="panel has--border additional--features">
+        <div class="panel--title is--underline">
+            {s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden?{/s}
         </div>
-    {/block}
+
+        <div class="panel--body is--wide block-group">
+
+                    <select id="paul-survey--select" name="CheckoutSurveyAnswer">
+                        <option value="">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="eBay">eBay</option>
+                        <option value="Google">Google Suche</option>
+                        <option value="Google Shopping">Google Shopping</option>
+                        <option value="Empfehlung ">Empfehlung</option>
+                        <option value="Andere Suchmaschiene">Andere Suchmaschiene</option>
+                    </select>
+        </div>
+    </div>
 {/block}

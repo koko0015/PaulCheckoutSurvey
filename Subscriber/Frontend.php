@@ -1,5 +1,4 @@
 <?php
-
 namespace PaulCheckoutSurvey\Subscriber;
 
 use Enlight\Event\SubscriberInterface;

@@ -15,5 +15,10 @@
             <tag name="shopware.event_subscriber"/>
         </service>
 
+        <service class="PaulCheckoutSurvey\Subscriber\Checkout" id="paul_checkout_survey.subscriber.checkout">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
     </services>
 </container>
