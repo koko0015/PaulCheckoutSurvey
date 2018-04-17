@@ -4,7 +4,7 @@
     {$smarty.block.parent}
     <div class="panel has--border additional--features">
         <div class="panel--title is--underline">
-            {s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden?{/s}
+            {s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden? - Danke!{/s}
         </div>
 
         <div class="panel--body is--wide block-group">
