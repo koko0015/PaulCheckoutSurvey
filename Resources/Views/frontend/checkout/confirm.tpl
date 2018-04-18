@@ -8,19 +8,18 @@
         </div>
 
         <div class="panel--body is--wide block-group">
-
             <select id="paul-survey--select" name="CheckoutSurveyAnswer" required="required" aria-required="true">
-                        <option value="" disabled selected>{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
-                        <option value="Amazon">Amazon</option>
-                        <option value="eBay">eBay</option>
-                        <option value="Google">Google Suche</option>
-                        <option value="Google Shopping">Google Shopping</option>
-                        <option value="Empfehlung">Empfehlung</option>
-                        <option value="Real.de">Real.de</option>
-                        <option value="BING">BING</option>
-                        <option value="Andere Suchmaschiene">Andere Suchmaschiene</option>
-                        <option value="Keine Auskunft">Keine Auskunft</option>
-                    </select>
+                <option value="" disabled selected>{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
+                <option value="Amazon">Amazon</option>
+                <option value="eBay">eBay</option>
+                <option value="Google">Google Suche</option>
+                <option value="Google Shopping">Google Shopping</option>
+                <option value="Empfehlung">Empfehlung</option>
+                <option value="Real.de">Real.de</option>
+                <option value="BING">BING</option>
+                <option value="Andere Suchmaschiene">Andere Suchmaschiene</option>
+                <option value="Keine Auskunft">Keine Auskunft</option>
+            </select>
         </div>
     </div>
 {/block}
