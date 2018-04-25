@@ -9,7 +9,7 @@
 
         <div class="panel--body is--wide block-group">
             <select id="paul-survey--select" name="CheckoutSurveyAnswer" required="required" aria-required="true">
-                <option value="" disabled selected>{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
+                <option value="Keine Auswahl" disabled selected>{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
                 <option value="Amazon">Amazon</option>
                 <option value="eBay">eBay</option>
                 <option value="Google">Google Suche</option>
