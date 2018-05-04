@@ -50,8 +50,10 @@ class Checkout implements SubscriberInterface
         $paul_survey_answer = $request->getParam('CheckoutSurveyAnswer');
 
         $session = $this->container->get('session');
-        $session->paul_survey_answer = $paul_survey_answer;
-
+        
+        if($paul_survey_answer !== null) {
+            $session->paul_survey_answer = $paul_survey_answer;
+        }
     }
 
 
