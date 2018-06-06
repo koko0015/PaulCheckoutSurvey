@@ -2,13 +2,17 @@
 
 {block name="frontend_checkout_confirm_information_wrapper"}
     {$smarty.block.parent}
+
     <div class="panel has--border additional--features">
         <div class="panel--title is--underline">
             {s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden? - Danke!{/s}
         </div>
 
         <div class="panel--body is--wide block-group">
-            <select id="paul-survey--select" name="CheckoutSurveyAnswer" required="required" aria-required="true">
+            <select data-ajaxUrl="{url controller='paulajax' action='savecheckoutsurvey' forceSecure}"
+                    id="CheckoutSurveyAnswer"
+                    name="CheckoutSurveyAnswer">
+
                 <option value="Keine Auswahl">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
                 <option value="Amazon">Amazon</option>
                 <option value="eBay">eBay</option>

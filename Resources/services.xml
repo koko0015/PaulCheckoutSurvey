@@ -5,6 +5,11 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
 
+        <service class="PaulCheckoutSurvey\Subscriber\AddJs" id="paul_checkout_survey.subscriber.add_js">
+            <argument id="service_container" type="service"/>
+            <tag name="shopware.event_subscriber"/>
+        </service>
+
         <service class="PaulCheckoutSurvey\Subscriber\CompileLess" id="paul_checkout_survey.subscriber.compile_less">
             <argument id="service_container" type="service"/>
             <tag name="shopware.event_subscriber"/>
