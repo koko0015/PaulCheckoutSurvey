@@ -11,9 +11,11 @@
         <div class="panel--body is--wide block-group">
             <select data-ajaxUrl="{url controller='paulajax' action='savecheckoutsurvey' forceSecure}"
                     id="CheckoutSurveyAnswer"
-                    name="CheckoutSurveyAnswer">
+                    name="CheckoutSurveyAnswer"
+                    required
+                    aria-required="true">
 
-                <option value="Keine Auswahl">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
+                <option value="">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
                 <option value="Amazon">Amazon</option>
                 <option value="eBay">eBay</option>
                 <option value="Google">Google Suche</option>
