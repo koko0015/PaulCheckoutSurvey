@@ -3,10 +3,15 @@
         xsi:noNamespaceSchemaLocation="../../../engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label lang="de">Umfrage im Checkout</label>
 
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <link>https://github.com/marcmanusch</link>
     <author>Marc Manusch</author>
     <compatibility minVersion="5.2.0"/>
+
+
+    <changelog version="1.1.2">
+        <changes>Remove getting the value from the selectbox by submitting the form</changes>
+    </changelog>
 
     <changelog version="1.1.1">
         <changes>Make selection required</changes>

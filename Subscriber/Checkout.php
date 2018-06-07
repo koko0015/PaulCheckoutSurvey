@@ -31,34 +31,8 @@ class Checkout implements SubscriberInterface
     public static function getSubscribedEvents()
     {
         return [
-            'Enlight_Controller_Action_PostDispatchSecure_Frontend_Checkout' => ['preDispatchCheckout',-100],
             'Shopware_Modules_Order_SaveOrder_FilterParams' => 'saveOrderFilterParams',
-
         ];
-    }
-
-    /**
-     *
-     * @param \Enlight_Event_EventArgs $args
-     *
-     * @Enlight\Event Enlight_Controller_Action_PreDispatch_Frontend_Checkout
-     */
-    public function preDispatchCheckout(\Enlight_Event_EventArgs $args)
-    {
-        /** @var $controller \Enlight_Controller_Action */
-        $controller = $args->getSubject();
-        $request = $controller->Request();
-        $view = $controller->View();
-
-        // Session holen
-        $session = Shopware()->Session();
-
-        // Wert aus Formular holen
-        $paul_survey_answer = $request->getParam('CheckoutSurveyAnswer');
-
-        // Wert in Session schreiben
-        $session->paul_survey_answer = $paul_survey_answer;
-
     }
 
 
