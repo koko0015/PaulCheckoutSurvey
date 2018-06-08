@@ -48,7 +48,7 @@ class Checkout implements SubscriberInterface
 
         //Hole Wert aus Session und speichere diesen als Order Attribut
         $order->orderAttributes['paul_order_survey'] = $session->get('paul_survey_answer');
-
+        Shopware()->Session()->paul_survey_answer = '';
 
     }
 }
