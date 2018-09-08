@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="$USER_HOME$/Library/Caches/PhpStorm2017.1/plugins/idea-php-latest-plugin/php-v7.2.4/php.sh" id="0a1de2c9-4d5c-403c-ac15-564405ae70f4" name="PHP latest" debugger_id="php.debugger.XDebug" />
+      <interpreter home="$USER_HOME$/Library/Caches/PhpStorm2017.1/plugins/idea-php-latest-plugin/php-v7.2.9/php.sh" id="2231ed05-4549-4ee8-906c-46297793daf0" name="PHP latest" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
 </project>
