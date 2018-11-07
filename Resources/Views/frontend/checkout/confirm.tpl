@@ -5,14 +5,15 @@
     {$smarty.block.parent}
     <div class="panel has--border additional--features">
         <div class="panel--title is--underline">
-            {s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden? - Danke!{/s}
+            <label for="CheckoutSurveyAnswer">{s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden? - Danke!{/s}</label>
         </div>
 
         <div class="panel--body is--wide block-group">
             <select data-ajaxUrl="{url controller='paulajax' action='savecheckoutsurvey' forceSecure}"
                     id="CheckoutSurveyAnswer"
                     name="CheckoutSurveyAnswer"
-                    required
+                    required="required"
+                    data-ga-invalid-jump="true"
                     aria-required="true">
 
                 <option value="">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
@@ -26,6 +27,7 @@
                 <option value="Andere Suchmaschiene">Andere Suchmaschiene</option>
                 <option value="Keine Auskunft">Keine Auskunft</option>
             </select>
+
         </div>
     </div>
 {/block}
