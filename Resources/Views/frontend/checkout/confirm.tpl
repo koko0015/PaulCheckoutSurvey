@@ -13,6 +13,7 @@
                     id="CheckoutSurveyAnswer"
                     name="CheckoutSurveyAnswer"
                     required="required"
+                    data-ga-invalid-jump="true"
                     aria-required="true">
 
                 <option value="">{s name='CheckoutSurveyPlacholder'}Auswahl...{/s}</option>
