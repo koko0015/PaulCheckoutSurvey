@@ -2,24 +2,6 @@
  * JS Files to get the value from checkout form
  */
 
-
-/*$( "select" )
-    .change(function () {
-        var str = "";
-        $( "select option:selected" ).each(function() {
-            //str += $( this ).text() + " ";
-            str = $( this ).text();
-        });
-
-        url = $('#CheckoutSurveyAnswer').attr('data-ajaxUrl');
-
-        $.post( url, { answer: str }, function( data ) {
-            $.loadingIndicator.close();
-        });
-    })
-    .change();*/
-
-
 $(document).ready(function() {
     $('#CheckoutSurveyAnswer').change(function(){
 
@@ -31,4 +13,18 @@ $(document).ready(function() {
             $.loadingIndicator.close();
         });
     });
+});
+
+$("#confirm--form").validate({
+    focusInvalid: false,
+    invalidHandler: function(form, validator) {
+
+        if (!validator.numberOfInvalids())
+            return;
+
+        $('html, body').animate({
+            scrollTop: $(validator.errorList[0].element).offset().top
+        }, 1000);
+
+    }
 });
