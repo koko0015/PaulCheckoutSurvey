@@ -3,7 +3,7 @@
 
 {block name="frontend_checkout_confirm_information_wrapper"}
     {$smarty.block.parent}
-    <div class="panel has--border additional--features CheckoutSurveyAnswer--panel">
+    <div class="panel has--border additional--features CheckoutSurveyAnswer--panel" for="CheckoutSurveyAnswer">
         <div class="panel--title is--underline">
             <label for="CheckoutSurveyAnswer">{s name='CheckoutSurvey'}Wo haben Sie uns zuerst gefunden? - Danke!{/s}</label>
         </div>
@@ -31,3 +31,4 @@
         </div>
     </div>
 {/block}
+
