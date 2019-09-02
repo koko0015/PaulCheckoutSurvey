@@ -1,0 +1,5 @@
+Hallo Marc,
+ich habe versucht, Deinen Survey um ein weiteres Feld zu erweitern (Textfeld). Leider werden ans Backend immer nur die Werte eines Feldes übergeben, die felder scheinen sich gegenseitig zu überschreiben.
+Leider bin ich noch ein relativer Neuling so dass ich es einfach nicht hinbekomme. In welchen Dateien muss ich überall Änderungen machen, wenn ich ein 2. Feld hinzufügen möchte?
+VG
+koko
